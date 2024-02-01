@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link
+      href="bootstrap-5.3.2-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- how to create a collapsible navigation bar -->
+    <nav class="navbar navbar-expand-md justify-content-center bg-success fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="images/images.png"
+            alt="logo"
+            class="rounded-circle"
+            height="40px"
+            width="40px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#goaway"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-expand-sm justify-content-center" id="goaway">
+          <ul class="navbar-nav navbar navbar-expand-sm justify-content-center">
+            <li class="nav-item navbar-expand-sm justify-content-center">
+              <a class="nav-link navbar-expand-sm justify-content-center" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown" 
+                >Branches</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Lagos</a></li>
+                <li><a class="dropdown-item" href="#">Abeokuta</a></li>
+                <li><a class="dropdown-item" href="#">Ibadan</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="container-fluid">
+      <div class="row m-3 bg-secondary text-info text-center font-weight-bolder" >
+        <div class="col-sm-3">
+          <div class="col1">this place takes only my logo</div>
+        </div>
+        <div class="col-sm-5">
+          <div class="col2">this is the nav bar and nothing more</div>
+        </div>
+      
+        <div class="col-sm-4">
+          <div class="col4">col 4</div>
+        </div>
+       
+        </div>
+      </div> -->
+    <h3>
+      Jumbotron Example
+      <p class="col-sm-12">
+        In this example, the ShippingForm component is artificially slowed down so that you can see what happens when a React component 
+        you’re rendering is genuinely slow. Try incrementing the counter and toggling the theme.
+
+        Incrementing the counter feels slow because it forces the slowed down ShippingForm to re-render. That’s
+         expected because the counter has changed, and so you need to reflect the user’s new choice on the screen.
+        
+        Next, try toggling the theme. Thanks to useCallback together with memo, it’s fast despite the artificial slowdown!
+         ShippingForm skipped re-rendering because the handleSubmit function has not changed. The handleSubmit
+         function has not changed because both productId and referrer (your useCallback dependencies) haven’t changed since last render.
+      </p>
+    </h3>
+    <div class="alert alert-danger alert-dismissible text-center">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>Oops!</strong> wrong password input.
+    </div>
+    <div class="alert alert-success alert-dismissible text-center">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>Good Job</strong> Welcome back!.
+    </div>
+    <!-- <div>
+    <button type="button" class="btn btn-warning btn-lg disabled">
+      Button
+    </button>
+    <button type="button" class="btn btn-outline-danger btn-block">
+      Button
+    </button>
+    <button class="btn btn-warning">
+      <span class="spinner-grow spinner-grow-sm"></span>
+    </button>
+    <button class="btn btn-warning">
+      <span class="spinner-border spinner-border-sm"></span>
+    </button>
+    <button type="button" class="btn bg-success">
+      Notifications <span class="badge bg-warning">5</span>
+    </button>
+  </div> -->
+    <!-- <div class="progress">
+      <div
+        class="progress-bar bg-dark progress-bar-striped progress-bar-animated"
+        style="width: 500px"
+      >
+        30%
+      </div>
+    </div>
+    <div class="dropdown dropup">
+      <button
+        type="button"
+        class="btn btn-success dropdown-toggle"
+        data-bs-toggle="dropdown"
+      >
+        Click for more
+      </button> -->
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">contact</a></li>
+        <li><a class="dropdown-item" href="#">payment</a></li>
+        <li><a class="dropdown-item" href="#">address</a></li>
+        <li><a class="dropdown-item" href="#">booking</a></li>
+        <li><a class="dropdown-item" href="#">order</a></li>
+      </ul>
+    </div>
+    <form action="/message.html" name="loginForm" onsubmit="">
+      <label for="firstname">firstname:</label>
+      <input type="text" id="fname" name="fname" />
+      <label for="lastname">LastName:</label>
+      <input type="text" id="lname" name="lname" />
+    </form>
+    <div class="card m-2" style="width: 280px; display: inline-block">
+      <div class="card-header text-center">Meet Mr Avater</div>
+      <div class="card-body">
+        <img src="images/download.jpg" alt="logo" height="200px" width="210px" />
+        <h2 class="card-title">This is a title</h2>
+        <p class="card-text">This is body text inside my Bootstrap card.</p>
+        <a href="#" class="btn btn-success">Learn more</a>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 280px; display: inline-block">
+      <div class="card-header text-center">Meet Mr Avater</div>
+      <div class="card-body">
+        <img src="images/images.png" alt="logo" height="200px" width="210px" />
+        <h2 class="card-title">This is a title</h2>
+        <p class="card-text">This is body text inside my Bootstrap card.</p>
+        <a href="#" class="btn btn-dark">Learn more</a>
+      </div>
+    </div>
+
+    <div class="card m-2" style="width: 280px; display: inline-block">
+      <div class="card-header text-center">Meet Mr Avater</div>
+      <div class="card-body">
+        <img src="images/IMG-20201025-WA0048.jpg" alt="logo" height="200px" width="210px" />
+        <h2 class="card-title">This is a title</h2>
+        <p class="card-text">This is body text inside my Bootstrap card.</p>
+        <a href="#" class="btn btn-danger">Learn more</a>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 280px; display: inline-block">
+      <div class="card-header text-center">Meet Mr Avater</div>
+      <div class="card-body">
+        <img src="images/Screenshot (4).png" alt="logo" height="200px" width="210px" />
+        <h2 class="card-title">This is a title</h2>
+        <p class="card-text">This is body text inside my Bootstrap card.</p>
+        <a href="#" class="btn btn-success">Learn more</a>
+      </div>
+    </div>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="3"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner" style="text-align: center">
+        <div class="carousel-item active">
+          <img
+            src="images/IMG-20201025-WA0048.jpg"
+            alt="Los Angeles"
+            style="width: 200px; padding: 20px"
+            class="rounded-circle"
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="images/images.png" alt="Chicago" style="width: 150px" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/download.jpg"
+            alt="leo"
+            class="rounded-circle"
+            width="150px"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon bg-success"
+          style="padding: auto"
+        ></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon bg-success"
+          style="padding: auto"
+        ></span>
+      </button>
+    </div>
+
+    <div class="text-center">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      >
+        Click Me first
+      </button>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal-->
+          <div class="modal-header">
+            <h4 class="modal-title">you're about to leave this page</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">hope you find our page intresting?</div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Leave
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form action="#" class="was-validated">
+      <div class="mb-3 mt-3">
+        <label for="username" class="form-label">Username:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          placeholder="Username.."
+          name="pswd"
+          required
+        />
+        <div class="valid-feedback">Nice job</div>
+        <div class="invalid-feedback">Please fill out this field</div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            placeholder="Enter password.."
+            name="pswd"
+            required
+          />
+          <div class="valid-feedback">Nice job</div>
+          <div class="invalid-feedback">Please fill out this field</div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <script
+      src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+ 
